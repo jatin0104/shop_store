@@ -16,7 +16,7 @@ const Login = () => {
 
         if (email === dummyEmail && password === dummyPassword) {
             localStorage.setItem('user', JSON.stringify({ email }));
-            navigate('/dashboard');
+            navigate('/');
         } else {
             setMessage('Invalid credentials ❌');
         }

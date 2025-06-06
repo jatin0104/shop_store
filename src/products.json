@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Red Shirt",
+    "price": 999,
+    "category": "Clothing",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "name": "Blue Jeans",
+    "price": 1499,
+    "category": "Clothing",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "name": "Wireless Mouse",
+    "price": 599,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "name": "Bluetooth Speaker",
+    "price": 1299,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 5,
+    "name": "Coffee Mug",
+    "price": 299,
+    "category": "Home",
+    "image": "https://via.placeholder.com/150"
+  }
+]
