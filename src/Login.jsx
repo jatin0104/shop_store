@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { encryptData } from './utils/encrypt'; // Adjust the path as necessary
 import { useNavigate } from 'react-router-dom';
 import { Container, Form, Button, Alert } from 'react-bootstrap';
 
@@ -10,12 +11,18 @@ const Login = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-
+        
         const dummyEmail = 'user@example.com';
         const dummyPassword = '123456';
-
+        
         if (email === dummyEmail && password === dummyPassword) {
-            localStorage.setItem('user', JSON.stringify({ email }));
+            const session = {
+                username: 'admin',
+                loginTime: new Date().getTime(),
+                expiryTime: new Date().getTime() + 30 * 60 * 1000,
+            };
+            const encrypted = encryptData(session);
+            localStorage.setItem('user', encrypted);
             navigate('/');
         } else {
             setMessage('Invalid credentials ❌');
