@@ -8,21 +8,22 @@ import NavbarComponent from './NavbarComponent';
 
 function App() {
   return (
-    <Router>
-       <NavbarComponent /> {/* ✅ Show on all pages */}
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route
-          path="/dashboard"
-          element={
-            <ProtectedRoute>
-              <Dashboard />
-            </ProtectedRoute>
-          }
-        />
-          <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    // <Router>
+    //    <NavbarComponent /> {/* ✅ Show on all pages */}
+    //   <Routes>
+    //     <Route path="/login" element={<Login />} />
+    //     <Route
+    //       path="/dashboard"
+    //       element={
+    //         <ProtectedRoute>
+    //           <Dashboard />
+    //         </ProtectedRoute>
+    //       }
+    //     />
+    //       <Route path="/" element={<Home />} />
+    //   </Routes>
+    // </Router>
+    <Home />
   );
 }
 
