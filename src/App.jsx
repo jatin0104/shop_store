@@ -6,6 +6,7 @@ import Header from './layout/headers/Header';
 import ProtectedRoute from './ProtectedRoute';
 import HomePage from './Pages/HomePage';
 import Footer from './layout/footers/Footer';
+import Shop from './Pages/Shop';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/shop" element={<Shop />} />
         <Route
           path="/dashboard"
           element={
